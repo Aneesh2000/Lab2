@@ -1,8 +1,11 @@
 import java.util.*;
 import java.lang.*;
-Class Lab2{
-	public static void float divide(int a,int b){
-		System.out.println("Division is" + (a/b));
+class Lab2{
+	
+	public double divide(int a,int b){
+		//System.out.println("Division is" + (a/b));
+		double g =((double) a) / b;
+		return g;
 	}
 	
 	public static void main(String args[]){
@@ -11,16 +14,17 @@ Class Lab2{
 		int x = sc.nextInt();
 		System.out.println("enter 2nd value");
 		int y = sc.nextInt();
-		divide(x,y);
+		Lab2 div = new Lab2();
+		System.out.println("Division is"+div.divide(x,y));
 
 		Addition addition = new Addition();
-		addition.add(x,y);
+		System.out.println("Addition is"+addition.add(x,y));
 		
 		Multiply multi = new Multiply();
 		multi.mul(x,y);
 
-		Substraction sub = new Substraction();
-		sub.sub(x,y);
+		substraction sub = new substraction();
+		System.out.println("Substraction is"+sub.sub(x,y));
 
 		
 	}

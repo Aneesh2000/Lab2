@@ -1,7 +1,6 @@
-import java.util.Scanner;
 public class Addition
 {
-	public static int addTwo(int a, int b)
+	public int add(int a, int b)
    {
       int sum = a + b;
       return sum;

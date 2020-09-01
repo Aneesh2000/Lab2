@@ -1,8 +1,0 @@
-public class Addition
-{
-	public void int add(int a, int b)
-   {
-      int sum = a + b;
-      return sum;
-   }
-}
